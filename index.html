@@ -22,16 +22,38 @@ o\:*         { behavior: url(#default#VML) }
  style='position:absolute;left:388.5pt;top:37.5pt;width:224.25pt;height:270pt;
  z-index:-1'/><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
 position:absolute;z-index:-1;left:517px;top:49px;width:301px;height:362px'><img
-width=301 height=362 src="index11_files/image001.gif" v:shapes="_x0000_s1025"></span><![endif]></p>
+width=301 height=362 src="index_files/image001.gif" v:shapes="_x0000_s1025"></span><![endif]></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><font size="6">&#9786;</font>Welkom op deze site.<font size="6">&#9786;</font></p>
 <p>Je kunt hier oefenen met het binaire stelsel.</p>
 <p>&nbsp;</p>
 <p>Druk op Login om in te loggen.</p>
-<FORM METHOD="LINK" ACTION="loggedin.html">
-<INPUT TYPE="submit" VALUE="Login">
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Voer je wachtwoord in',' ');
+while (testV < 999999999999999999999999999999999999) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "g2abinair") {
+window.open('loggedin.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Het wachtwoord is onjuist','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
 </FORM>
+</CENTER>
 <p>Problemen met inloggen?</p>
 <p>Stuur dan een mail naar:<br>
 basvandenboom3@gmail.com</p>
