@@ -6,7 +6,8 @@
 <!--hide
 
 var password = 0;
-
+[lbl] start:
+[lbl] repeat: goto start;
 var pass1 = "G2aBinair";
 
 password = prompt("Voer het wachtwoord in:");
@@ -17,6 +18,7 @@ if (password === pass1){
   else
    {
     alert("Dit is niet het juiste wachtwoord!")
+    [lbl] repeat: goto start;
     }
 
 //-->
