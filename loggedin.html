@@ -1,45 +1,50 @@
-<html>
 
-<head>
-<LINK REL="SHORTCUT ICON"
-       HREF="../FavIcon.ico">
-<title>Oefen met het binaire stelsel</title>
-</head>
+<script language="JavaScript1.2">
+<!--
 
-<body bgcolor="#00FF00">
-<center>
-<font size="6">Oefenen met het binaire stelsel.
-</font>
-<p>&nbsp;</p>
-<p>Hieronder kun je een oefening kiezen.</p>
-<p>&nbsp;</p>
-<p>Omrekenen van binair naar decimaal --&gt;<form method="POST" action="--WEBBOT-SELF--" onSubmit="location.href='../omrekenenbd.html';return false;" webbot-onSubmit>
-		<p><button name="orbd">Klik hier</button></p>
-</form>
-<p>Omrekenen van decimaal naar binair --&gt; </p>
-<form method="POST" action="--WEBBOT-SELF--" onSubmit="location.href='../omrekenendb.html';return false;" webbot-onSubmit>
-	<p><button name="ordb">Klik hier</button></p>
-</form>
-<p>Optellen met het binaire stelsel --&gt; </p>
-<form method="POST" action="--WEBBOT-SELF--" onSubmit="location.href='../optellen.html';return false;" webbot-onSubmit>
-	<!--webbot bot="SaveResults" U-File="../_private/form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" startspan --><!--webbot bot="SaveResults" endspan -->
-	<p><button name="ob">Klik hier</button></p>
-</form>
-<p>Aftrekken met het binaire stelsel --&gt; </p>
-<form method="POST" action="--WEBBOT-SELF--" onSubmit="location.href='../aftrekken.html';return false;" webbot-onSubmit>
-	<!--webbot bot="SaveResults" U-File="../_private/form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" startspan --><!--webbot bot="SaveResults" endspan -->
-	<p><button name="ab">Klik hier</button></p>
-</form>
-<p>Uitleg --&gt;</p>
-<form method="POST" action="--WEBBOT-SELF--" onSubmit="location.href='../uitleg.html';return false;" webbot-onSubmit>
-	<!--webbot bot="SaveResults" U-File="../_private/form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" startspan --><!--webbot bot="SaveResults" endspan -->
-	<p><button name="uitleg">Klik hier</button></p>
-</form>
-</p>
-</form>
-<p>Elke 2 dagen komen er nieuwe opdrachten.</p>
-<p>Oefen ook op je mobiel!</p>
-</center>
-</body>
 
-</html>
+function get_password() {
+  orig_pass = prompt("Voer het wachtwoord in","");
+  if (orig_pass!=null && orig_pass!="")
+  password = new Array(orig_pass.length);
+  for(i=0; i<orig_pass.length; i++) {
+    password[i] = orig_pass.charCodeAt(i);
+  }
+  return password;
+}
+
+password = get_password();
+orig = unescape("n%20e%20%20eielm%3Des/%3Emteec%3Ctmddhmhmm%3CmbKmcr%3EmmylOg0ltd%20%3DFO0mmar%22%22c%20mm%3Es0%3Etm%22%3Esoeneozo%20Ooafn%22fm%3Ee0%3C%3D6e%20Omneonnti%20il%3CFe%20%20eie/e%3Cesmo%3E%3C%3Cem.m%3E%3Eem%3ChitmbpI%3B%3ErensmiSprltmmokIeenarn%20n%20%20i%26snjegFnn%3Efofi%3CIe%3Cepke%3E%3E%3Em%3Cu/pmbpe%3B%3E%20Hnsmmepn%20%20mmkvnea/eee%20rlnd%26nnbacm%20-%3E.naa%26%3E%20rrpma%3B%20%20o%3Da/t%3CtPRdc%20OehTiNaWi%20S%22%3DB%20-Lgin%22T-.EumeO-%20m%3CScO-%22o%3Dtmoeomt%22n%3DmrrB%22o..kRm.-t./etTdtiEnn%27r%22eeiFl%3Bf%22%20st%27b%20aeo.oteawbum.i%3EmfSb%09b%3Cpnnem%09tmf%20d%20hto%22%3Etbinu%3Doirmhom%3Blkb%3Emtmu-/up/Lmme%3E/%3Er%3CUmkK%3ComOnme%20%3Ca%3Em%20eHn%20%3C%22nvmaFlafeia%20rcn%3Bpnrb-%3Cit%3Ce%3C-%26%3Eonmhcmpm%20dmt%22aemmPa%3CT%22%20d%22Oi-%3C%3D-/ntoBE%3DToriEB-ST%20%22%3D%20F-mom%3D.cfbitrRn/Woai%3Dma.nL%20f%27kboe%3Bu-eetet%27acShmrs%20fbenun%22obebrl%3B%20oitu%3C.h-nm%3Ei%09nto%3Emun/oredbtebmo%20trm%3DKibkttl%3El%3Co%23um%3Cbr/%3Cmm%3E%3Eam%3E/fmrmt%22p/opltpte%20%3C%3Enh%22eande%20%20r%20ns%3Chtbslbl%3Bmt%20t-%3Ctt%3Clm-%26%3Eommhempm%20dmt%22eemmPapT%22%20%20%22Oi-%3C%3D-/itoBEdToreEB-Se%20%22%3D%20F-moe%3D.cfbitrzn/Woai%3Dpm..L%20f%27ltpntu-el%27r%3CeecSl%3Bf%22nsten%20aeoiottlwbumri-mhSb%09el-onom%3Co%3Dfbe%20hbtauoR-nuSvsi%20U/m%3Bt%22%3Dp-./b-e%22voSeu%22%3Eia_tns%20lwmrc-l%22%3Dlt.srThtVrsomT%20oSlrFX/LFbe%22s_-alRr%3DaFfed%22tlt-ElE%20a%3Cb-bSSpn-tmbSi%22-wov%3C%22tU%22bte%22nlas-Rsn%20rp%09%21Ted%3Ep%20mo%20r-mb%20ttoe%3E%3Cum%22m%22h%20oaele%3E%20t-aKi/nrtm%3Es%3Cb/%3Cammnn%3Cpoma%3Er%3E%3Cfr%3EkittrnpAnhgea%3Ebe%20%20rmns/itbslel%3B%3Co%20t-%3CSt%3Ckm-%26%3Eonmhempm%20dOt%22eemmPa%22T%22%20%20%22Oi-t%3D-/itoBEoToreEB-S.%20%22%3D%20F-mon%3D.cfbitrln/Woai%3Df%20.nL%20f%27ehweeu-rkluSrscSm%27%20%3Bmloennfw-tbitl%20eS%3E%22m-thnumwi%21bram%09btb%20R%22.boSspeUot%22atFr%20.melse_O.eetl%3Difmts%3Dtrvmlie%22u-r_.Sevtiosco%22gaSpeFrX%22mCeo-ET--eb%3Dt/SLeTSst-/ilErns-TuU%22p%3EO%20b%20%20sa-o%22e%22F%3D%21-bat%3DlRV%20oRsouptleeen.sm%3C%22%20n-%3Cemtta-%3E%3Cnrt%22v-%3Ebabl%3D%20%22bnmKibkt%20S%3El%3Comumptr/%3Cm%21%3E%3E%20a%3E/fm%20mt%22%09/opeeiteo%3C%3E-%3C%20g%3Cna%20-%3Eo.mh%3Chpm%20dtt%22mtmmPaeT%22gm%22Oi-v%3D-/mtoBEaTorlEB-SC%20%22%3D%3BF-mob%3D.cfbitrsn/Woai%3Dis.tL%20f%27el%20hru-lgr%20eu%22cS%3Belw%3D%3BoenasbSu-mtlbomms%3Ee%27hbi%21bmw%3Dfu%3C-%20Sttuemtbet%3DsiunvR%20ekFp%09%20%22U.iu_oon%22.tm%3Eftamaee.ml-sbrsvofST%3D%22s%22aXm%22%20vlmtC-i%22F_l/Sbee-RcraesEgTtrrd%3Dspmr%3CTs%20t%20-e%3EtLFn-ebSovlEwb%3DRna%22%22St%22ueOs%20aisls-%22np-Udpm%3Ct%3C%20osmmtaonte%21ut%3De.ikn%20e%22%3Ehkiu%3Ee%22Krt%3Bb%3Eb%20e%3C%3Emapmm-n%3C/mbrmg%3E%3Cf%3Cmb%3E%3Einm/fm%3Cmkol/op%20tlnm%20%3C%3Edkvermt%20aen%22eo%3Cmmnud%22%20nm%3Eewc%3Cae%3C2mah%3E%3Ermoompmfks%20%20ieeepome/r%20o%20e%3E/%3Ce/%20ilmtac%3COpm%3C%3Ebdmm%20.rmym%20mlbpd%3E/mnmtmo%3Ch/mwttemm%20ievs-opoetS%22domnutenlmem/lmtOmu-%22m/nl%22me/a%3E/jhtai/-mo%21LoNbubEp/%22.Hp%20SCrm%20.Cr%3DtmEm%20thUVa%20gtEem%26l%09");
+orig = orig.split("");
+
+passnum = orig.length % password.length;
+for(i=orig.length-1; i>=0; i--) {
+
+  passnum--;
+  if (passnum == -1) passnum = password.length - 1;
+  
+  pos1 = i;
+  pos2 = i + password[passnum];
+
+  if (pos2 >= orig.length) continue;
+
+  char1 = orig[pos1];
+  char2 = orig[pos2];
+
+  orig[pos2] = char1;
+  orig[pos1] = char2;
+
+}
+
+orig1 = "";
+for(i=0;i<orig.length;i++) {
+  orig1 = orig1 + orig[i];
+}
+orig1 = orig1.replace(/mmm/g,"\r\n");
+
+document.write(orig1);
+
+//-->
+
+</script>
+<noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
