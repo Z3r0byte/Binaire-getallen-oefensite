@@ -1,0 +1,74 @@
+<html>
+<head>
+<script>
+var goedans = 0;
+var num1 = "101";
+var num2 = "1001";
+var num3 = "1010";
+var num4 = "111000";
+var num5 = "10101";
+var vraag1 = "Wat is " + num1 + " in het decimale stelsel?";
+var vraag2 = "Wat is " + num2 + " in het decimale stelsel?";
+var vraag3 = "Wat is " + num3 + " in het decimale stelsel?";
+var vraag4 = "Wat is " + num4 + " in het decimale stelsel?";
+var vraag5 = "Wat is " + num5 + " in het decimale stelsel?";
+var gans1 = parseInt(num1, 2);
+var gans2 = parseInt(num2, 2);
+var gans3 = parseInt(num3, 2);
+var gans4 = parseInt(num4, 2);
+var gans5 = parseInt(num5, 2);
+</script><script>
+var ans1 = prompt(vraag1)
+</script>
+<script>
+if (ans1 == gans1) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans1)
+}
+</script><script>
+var ans2 = prompt(vraag2)
+</script>
+<script>
+if (ans2 == gans2) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans2)
+}
+</script><script>
+var ans3 = prompt(vraag3)
+</script>
+<script>
+if (ans3 == gans3) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans3)
+}
+</script><script>
+var ans4 = prompt(vraag4)
+</script>
+<script>
+if (ans4 == gans4) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans4)
+}
+</script><script>
+var ans5 = prompt(vraag5)
+</script>
+<script>
+if (ans5 == gans5) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans5)
+}
+</script><script>
+alert("Het aantal goede antwoorden was " + goedans + "/5.");
+</script>
+</head>
+</html>
