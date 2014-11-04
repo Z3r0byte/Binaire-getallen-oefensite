@@ -1,0 +1,58 @@
+<html>
+<head>
+<script>
+var goedans = 0
+var num1 = "3";
+var num2 = "10";
+var num3 = "8";
+var num4 = "15";
+var num5 = "12";
+var gans1 = Number(num1).toString(2);
+var gans2 = Number(num2).toString(2);
+var gans3 = Number(num3).toString(2);
+var gans4 = Number(num4).toString(2);
+var gans5 = Number(num5).toString(2);
+var vraag1 = "Wat is " + num1 + " in het binaire stelsel?";
+var vraag2 = "Wat is " + num2 + " in het binaire stelsel?";
+var vraag3 = "Wat is " + num3 + " in het binaire stelsel?";
+var vraag4 = "Wat is " + num4 + " in het binaire stelsel?";
+var vraag5 = "Wat is " + num5 + " in het binaire stelsel?";
+var ans1 = prompt(vraag1);
+if (ans1 == gans1) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans1)
+}
+var ans2 = prompt(vraag2);
+if (ans2 == gans2) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans1)
+}
+var ans3 = prompt(vraag3);
+if (ans3 == gans3) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans1)
+}
+var ans4 = prompt(vraag4);
+if (ans4 == gans4) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans1)
+}
+var ans5 = prompt(vraag5);
+if (ans5 == gans5) {
+alert("Je hebt het goede antwoord gegeven!")
+var goedans = goedans + 1
+} else {
+alert("Je hebt niet het goede antwoord gegeven. Het juiste antwoord is " + gans1)
+}
+alert("Het aantal goede antwoorden was " + goedans + "/5");
+</script>
+</head>
+</html>
