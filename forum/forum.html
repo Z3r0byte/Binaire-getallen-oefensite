@@ -26,10 +26,10 @@ function getCookie(cname) {
 
 function checkCookie() {
     var user=getCookie("username");
-    if (user != "") {
+    if (user = "true") {
         alert("Hoi");
     } else {
-       user = prompt("Registreer je om antwoorden te kunnen zien gebruik een email adres waar je zelf in kan, dit is nodig voor activatie van het account");
+       user = confirm("Registreer je om antwoorden te kunnen zien gebruik een email adres waar je zelf in kan, dit is nodig voor activatie van het account");
        if (user != "" && user != null) {
            setCookie("username", user);
        }
