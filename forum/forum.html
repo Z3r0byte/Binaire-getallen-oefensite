@@ -26,12 +26,13 @@ function getCookie(cname) {
 function checkCookie() {
     
     } else {
+                alert("Registreer je om berichten te kunnen zien.");
       var user=getCookie("username");
     if (user != "1") {
  user = 1;
        if (user != "" && user != null) {
            setCookie("username", user, 30);
-        alert("Registreer je om berichten te kunnen zien.");
+
        }
     }
 }
