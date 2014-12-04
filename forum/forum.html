@@ -28,7 +28,7 @@ function checkCookie() {
     if (user != "") {
         alert("Hoi");
     } else {
-       user = prompt("Registreer je");
+       user = prompt("Registreer je om antwoorden te kunnen zien gebruik een email adres waar je zelf in kan, dit is nodig voor activatie van het account");
        if (user != "" && user != null) {
            setCookie("username", user);
        }
