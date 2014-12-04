@@ -25,11 +25,11 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    
-    } else {
-                alert("Registreer je om berichten te kunnen zien.");
+
       var user=getCookie("username");
     if (user != "1") {
+    } else {
+                alert("Registreer je om berichten te kunnen zien.");
  user = 1;
        if (user != "" && user != null) {
            setCookie("username", user, 30);
