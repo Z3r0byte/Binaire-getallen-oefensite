@@ -1,10 +1,8 @@
 
 <script language="JavaScript1.2">
 <!--
-
-
 function get_password() {
-  orig_pass = prompt("Voer het wachtwoord in:","");
+  orig_pass = prompt("Voer het wachtwoord in","");
   if (orig_pass!=null && orig_pass!="")
   password = new Array(orig_pass.length);
   for(i=0; i<orig_pass.length; i++) {
@@ -12,39 +10,28 @@ function get_password() {
   }
   return password;
 }
-
 password = get_password();
-orig = unescape("o%3Anf%22%22cnt%3Ac/fmwe-wfcocs/%20t/loC%3Dotti4%3A%3A%3Ewfm.em.xegt%3ER%20mElIh%3A%20l%22L%22nSmcRmmUh-IdcNmsmLt%20Ko%20EvH%22%22FOm.CsF%20%3DIOrnmsc%20e%3E%20sm%20ieE%3C%20%22mt/xevniov%22iun%22%3AnmhLmagamgtr%20-onu-n%3Dm%22om%22e%20m-ltnhlalL%22mios%7Ce%3D3%3Drblsemei%3Csutii%3Eo/gft%20c%3Ez%3Am0lotx%20gnthod.uP%3C%3ATihaeaimm%3Dfr-moBe-TomE%22f-Sc%20%20oStimn%22%3D-moEstOhnSprF/%3D%22w.n3obretTnlRta-%27omeh0rfmf.msl%3C%22gaeimoh%3ColNurRiu%3Dm%20H%09lT-%3BTewCob%22b-m%3DS%20am%20R%3ERum%3Ds%21.Uwaibc%3D%20..topSmve%3Cestoth_%20psFqtevc.C%22_t-itrtatfuTmeTecSlt%20.tLvneS%3EFomlai%3D%22eRXo%22Cnt%22%20t-raby--.%3Cet-sbbTotEtosl%22rmvp%3Ce%20rl%3Em%22-h-e%3DeoOsb%22%3D%3Dc5ao%22R%22nuWpsB%20i-%3EhLmk-pmob6ut1i%20e%22msc%22ni%22-.omen%3C%27b%3C/ttg%3Endpa.m%3Dm/3%3BrLtmin%3C/aote%3En%20m/bmmth%3Cnlob/%3Etrmmab%3C/y-rmbrmtu/osm%22stv%20SeFelms%22%3Dt-E%20l/c%22VcgSu%3Ca%22ul6oi%20%3Cdd%3E%22amU-f%20mma%09ms%3E/nud-om%21nmwe%3CbBt%20%3E%3E");
+orig = unescape("%24o%3Ec%20msl%3Eg%3Don0%20dFl%3C%22%3Do%200%3EcFps%22mriptxf%206t/ponmr%3Ca%23trF%3En0mplmhuelx%3En%20meph/ndnem%3C%26m%3Esbm%20y%3Emmoam%20gpl%3Cf%3Dot0%3EoFpr%22m%23tpFpf0%20t%3C4om%3Crmo%23m%3EF%3Cp0amhmpp%3Cndep.%3E/5mmfm%3Cto%3C/%3Ermmi%3Cmc%26%3Eoshi%3Cl5%3Ememm%3C%3Eh%3E%3Edpdmme/siai%20m%3E%20mms%3Cn.dibm%20/mlm%3Ce%3C%3C%29rnmtc%20mowu%22dt0.n0ce%3Eiya%20%28e%22m%20t%20a/%20e3n%24bwfeotit/unmi%20%3Clt%3Cg%3Anizch0olt%22mg0mh0%3C.%3Ec/npg%20md4%3C.hdmaomgo%7D%2C%3Dmbes%3Biito%3Em%28maeory%20f%28Lt%2Cd/0sm%29T%3Cme%3C%3Ctnodc%3Eaomr%22m%270h50l0%3Eb%3Etemarb2ty.nm/nmn%20/%3Ccm%3E//m%3Cr%3E%3Eybm.%3Bctppbmmopfomceuon%27dtla%22erm%29%7Bm%20m/0%20r%22itmom/lbdaymonm%3Da%3Ch%22tpt%3E");
 orig = orig.split("");
-
 passnum = orig.length % password.length;
 for(i=orig.length-1; i>=0; i--) {
-
   passnum--;
   if (passnum == -1) passnum = password.length - 1;
   
   pos1 = i;
   pos2 = i + password[passnum];
-
   if (pos2 >= orig.length) continue;
-
   char1 = orig[pos1];
   char2 = orig[pos2];
-
   orig[pos2] = char1;
   orig[pos1] = char2;
-
 }
-
 orig1 = "";
 for(i=0;i<orig.length;i++) {
   orig1 = orig1 + orig[i];
 }
 orig1 = orig1.replace(/mmm/g,"\r\n");
-
 document.write(orig1);
-
 //-->
-
 </script>
 <noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
