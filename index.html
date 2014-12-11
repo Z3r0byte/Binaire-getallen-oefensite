@@ -1,42 +1,7 @@
-<script>
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-    
-    //-----------------------------------------
-    
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) != -1) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function checkCookie() {
-    var username=getCookie("z3r0byte1");
-    if (username!="") {
-        var orig_pass = username
-    }else{
-        var username = "G2aG2a";
-        if (username != "" && username != null) {
-            setCookie("z3r0byte1", username, 30);
-        }
-    }
-}
-    
-</script>
 <script language="JavaScript1.2">
 <!--
 function get_password() {
+    orig_pass = prompt("Voer wachtwoord in")
   if (orig_pass!=null && orig_pass!="")
   password = new Array(orig_pass.length);
   for(i=0; i<orig_pass.length; i++) {
